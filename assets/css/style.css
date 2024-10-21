@@ -3129,7 +3129,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .banner_fullwidth {
-  background: url(../img/bg/banner7.jpg);
+ 
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center center;
@@ -4812,7 +4812,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   }
 }
 .footer_logo a img {
-  width: 150px;
+  width: 400px;
 }
 
 .contact_us > p {
@@ -5330,16 +5330,25 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   background: #ffffff;
   border-radius: 3px;
   font-size: 13px;
+  transition: background-color 0.3s, border-color 0.3s;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tag_cloud a {
     padding: 5px 10px;
   }
 }
+
 .tag_cloud a:hover {
   background: #79a206;
   border-color: #79a206;
   color: #ffffff;
+}
+
+.tag_cloud a.active {
+  background-color: #79a206;
+  border-color: #79a206;
+  color: white;
 }
 
 .shop_sidebar_product .single_product {
