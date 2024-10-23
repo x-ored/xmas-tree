@@ -32,6 +32,135 @@
   box-sizing: border-box;
 }
 
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Main header styling */
+.main_header {
+  background-color: #f9f9f9;
+  padding: 10px 0;
+}
+
+.header_middle {
+  padding: 10px 0;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+/* Desktop menu */
+.main_menu {
+  display: block;
+}
+
+.main_menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main_menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.main_menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Hide mobile menu by default */
+.mobile_menu {
+  display: none;
+}
+
+/* Mobile-specific styling */
+@media screen and (max-width: 768px) {
+  /* Hide the desktop logo on mobile screens */
+  .header_middle .logo {
+      display: none;
+  }
+
+  /* Show mobile menu */
+  .mobile_menu {
+      display: block;
+      background-color: #f9f9f9;
+      padding: 20px;
+  }
+
+  .mobile_menu .footer_logo img {
+      max-width: 350px;
+  }
+
+  .footer_widgetnav_menu ul {
+      list-style: none;
+      padding: 0;
+  }
+
+  .footer_widgetnav_menu ul li {
+      margin-bottom: 10px;
+  }
+
+  .footer_widgetnav_menu ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+  }
+
+  .footer_social ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+  }
+
+  .footer_social ul li {
+      margin-right: 10px;
+  }
+
+  .footer_social ul li a {
+      text-decoration: none;
+      color: #333;
+  }
+
+  .footer_social ul li a i {
+      font-size: 16px;
+  }
+}
+
+/* Desktop-specific styling */
+@media screen and (min-width: 769px) {
+  /* Hide the mobile menu logo on desktop screens */
+  .mobile_menu .footer_logo {
+      display: none;
+  }
+
+  /* Desktop menu styling */
+  .main_menu ul li a {
+      color: #333;
+  }
+
+  .main_menu ul li a:hover {
+      color: #007bff;
+  }
+}
+
+/* Footer styles (if needed) */
+.footer_widgetnav_menu ul li a:hover {
+  color: #007bff;
+}
+
+.footer_social ul li a i:hover {
+  color: #007bff;
+}
+
 /* transition */
 /* flex */
 /* transform */
