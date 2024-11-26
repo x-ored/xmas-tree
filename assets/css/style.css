@@ -32,6 +32,27 @@
   box-sizing: border-box;
 }
 
+.instagram-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3897f0; /* Синий цвет Instagram */
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.instagram-button:hover {
+  background-color: #3b5998; /* Темно-синий цвет при наведении */
+  transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+
+.instagram-button:active {
+  background-color: #1d428a; /* Цвет при нажатии */
+}
+
 /* General styles */
 body {
   margin: 0;
